@@ -812,7 +812,7 @@ ALTER TABLE ONLY contexts
 --
 
 ALTER TABLE ONLY locations
-    ADD CONSTRAINT locations_latitude_key UNIQUE (latitude);
+    ADD CONSTRAINT locations_latitude_longitude_key UNIQUE (latitude, longitude);
 
 
 --
